@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b12">
+  <meta name="description" content="Blocky HQ — a Minecraft community to play, compete, build and hang out.">
+  <title>Blocky HQ — Minecraft Community</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Blocky HQ home">
+      <span class="brand-mark">B<span>H</span></span>
+      <span class="brand-name">BLOCKY<span>HQ</span><small>MINECRAFT COMMUNITY</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#community">Community</a>
+      <a class="nav-link" href="#leaderboard">Leaderboard</a>
+      <a class="nav-link" href="#events">Events</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-join" href="#join">JOIN THE DISCORD <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> YOUR NEXT MINECRAFT HANGOUT</div>
+        <h1>BUILD. BATTLE.<br><span>BELONG.</span></h1>
+        <p class="hero-lede">A place to find your squad, show off your builds, sharpen your PvP and make your next Minecraft story.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#join">JOIN BLOCKY HQ <span>↗</span></a>
+          <a class="button button-ghost" href="#community">EXPLORE THE COMMUNITY</a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><i>B</i><i>H</i><i>+</i></div>
+          <div><strong>57 MEMBERS</strong><small>THE COMMUNITY IS GROWING</small></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative Minecraft-inspired block artwork">
+        <div class="art-grid"></div>
+        <div class="cube cube-back"></div><div class="cube cube-mid"></div><div class="cube cube-front"></div>
+        <div class="pixel-star star-one">✦</div><div class="pixel-star star-two">✧</div>
+        <div class="art-tag"><span class="tag-dot"></span> COMMUNITY ONLINE</div>
+        <div class="art-caption">THE HQ<br><span>STARTS HERE.</span></div>
+      </div>
+      <div class="hero-bottom"><span>01 / COMMUNITY</span><span>SCROLL TO EXPLORE ↓</span><span>EST. FOR THE PLAYERS</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Community values"><div>✦ MINECRAFT FIRST <b>✦</b> FRIENDS ALWAYS <b>✦</b> PLAY TOGETHER <b>✦</b> COMPETE TOGETHER <b>✦</b> BUILD SOMETHING BIG <b>✦</b> MINECRAFT FIRST <b>✦</b> FRIENDS ALWAYS <b>✦</b></div></section>
+
+    <section class="section-wrap section-block" id="community">
+      <div class="section-heading">
+        <div><div class="eyebrow">MORE THAN A SERVER</div><h2>FIND YOUR <span>PLACE.</span></h2></div>
+        <p>Whether you're here to chill, grind or take the top spot, there's room for you at Blocky HQ.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large"><div class="feature-icon">⚔</div><span class="card-index">01 / COMPETE</span><h3>PROVE<br>YOUR SKILL.</h3><p>PvP, friendly rivalries and community challenges. Bring your best game.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card"><div class="feature-icon">⌂</div><span class="card-index">02 / CREATE</span><h3>SHOW WHAT<br>YOU BUILT.</h3><p>Share builds, ideas, farms and clever redstone creations.</p><span class="card-arrow">↗</span></article>
+        <article class="feature-card"><div class="feature-icon">◉</div><span class="card-index">03 / CONNECT</span><h3>MEET YOUR<br>NEXT SQUAD.</h3><p>Find people to play with, chat with and make memories alongside.</p><span class="card-arrow">↗</span></article>
+      </div>
+    </section>
+
+    <section class="stats-band">
+      <div class="section-wrap stats-inner">
+        <div><span class="stat-number" id="memberCount">57</span><span class="stat-label">COMMUNITY MEMBERS</span></div>
+        <div><span class="stat-number">1</span><span class="stat-label">GAME. INFINITE WAYS TO PLAY.</span></div>
+        <div><span class="stat-number">∞</span><span class="stat-label">BUILDS, BATTLES & MEMORIES</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="leaderboard">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE ONES TO WATCH</div><h2>HQ <span>LEADERBOARD.</span></h2></div>
+        <p>Give your community something to chase. Update these demo entries with your real rankings whenever you're ready.</p>
+      </div>
+      <div class="leaderboard-panel">
+        <div class="leaderboard-top"><span>RANK / PLAYER</span><span>STAT</span></div>
+        <div id="leaderboardRows"></div>
+        <div class="leaderboard-foot"><span>BLOCKY HQ / PLAYER RANKINGS</span><span>DEMO DATA — EDIT IN SCRIPT.JS</span></div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="events">
+      <div class="section-heading">
+        <div><div class="eyebrow">GET IN THE GAME</div><h2>WHAT'S <span>HAPPENING.</span></h2></div>
+        <p>Make the server feel alive with regular events. These are starter ideas you can replace with your real schedule.</p>
+      </div>
+      <div class="event-grid">
+        <article class="event-card"><div class="event-date"><strong>01</strong><span>EVENT IDEA</span></div><div><span class="event-type">COMPETITIVE</span><h3>PvP SHOWDOWN</h3><p>Set up a bracket, gather your fighters and crown an HQ champion.</p></div><span class="event-symbol">⚔</span></article>
+        <article class="event-card"><div class="event-date"><strong>02</strong><span>EVENT IDEA</span></div><div><span class="event-type">CREATIVE</span><h3>BUILD BATTLE</h3><p>Pick a theme, set a timer and let the community vote for the winner.</p></div><span class="event-symbol">▧</span></article>
+        <article class="event-card"><div class="event-date"><strong>03</strong><span>EVENT IDEA</span></div><div><span class="event-type">COMMUNITY</span><h3>SURVIVAL NIGHT</h3><p>Team up, explore and make a new story together.</p></div><span class="event-symbol">⌁</span></article>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-wrap about-inner">
+        <div><div class="eyebrow">WELCOME TO THE HQ</div><h2>MADE BY PLAYERS.<br><span>BUILT TOGETHER.</span></h2></div>
+        <p>Blocky HQ is a Minecraft community for friends, new faces and competitive players. Jump into conversations, find teammates, share your best moments and help shape what comes next.</p>
+      </div>
+    </section>
+
+    <section class="section-wrap join-section" id="join">
+      <div class="join-card">
+        <div class="join-orbit orbit-a"></div><div class="join-orbit orbit-b"></div>
+        <div class="eyebrow"><span class="live-dot"></span> YOUR SQUAD IS WAITING</div>
+        <h2>READY TO<br><span>JOIN THE HQ?</span></h2>
+        <p>Meet the community, find your next teammate and get in on the action.</p>
+        <a class="button button-primary button-large" id="discordLink" href="https://discord.com" target="_blank" rel="noopener">JOIN OUR DISCORD <span>↗</span></a>
+        <small class="join-note">Replace the placeholder Discord link with your server invite.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">B<span>H</span></span><span class="brand-name">BLOCKY<span>HQ</span><small>MINECRAFT COMMUNITY</small></span></a>
+    <span>© <span id="year"></span> BLOCKY HQ. BUILT BY THE COMMUNITY.</span>
+    <a href="#home" class="back-top">BACK TO TOP ↑</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
